@@ -1,0 +1,32 @@
+  </div>
+
+  <aside id="navigation">
+    <nav id="secondary">
+      <h2 id="nav">Navigation</h2>
+      <ul>
+        <li><a href="${BLOG_URL}">${HOME_TITLE}</a></li>
+        <li><a href="${BLOG_URL}/${POSTDIR_NAME}/${POSTDIR_INDEX}">${POST_LIST_TITLE}</a></li>
+        <li><a href="${BLOG_URL}/${TAGDIR_NAME}/${TAGDIR_INDEX}">${TAG_LIST_TITLE}</a></li>${ABOUT_LINK}
+      </ul>
+    ${SEARCHBAR}
+    </nav>
+
+    ${SIDEBAR}
+  </aside>
+
+  <footer id="footer">
+    <p>${POWERED_BY} <a href="" title="Quinoa">Quinoa</a> (<a href="" title="${SOURCE_LINK_TITLE}">${SOURCE_LINK_NAME} gitorious</a>)<br />
+    ${THEME_IS} ${CSS_NAME}</p>
+    <div id="special_footer">
+        ${FOOTER_CONTENT}
+    </div>
+  </footer>
+
+  <!-- Script JQuery -->
+  <script src="${BLOG_URL}/js/vendor/jquery-1.9.1.min.js"></script>
+
+  <script src="${BLOG_URL}/js/main.js"></script>
+${JSKOMMENT_SCRIPT}
+${ELI_SCRIPT}
+</body>
+</html>
