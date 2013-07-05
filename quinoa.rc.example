@@ -11,3 +11,4 @@ DATE_FORMAT = %d-%m-%Y à %H:%M
 SHORT_DATE_FORMAT = %Y/%m/%d
 MAX_RSS = 10
 ABOUT_FILENAME = apropos
+SIDEBAR = 1

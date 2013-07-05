@@ -90,7 +90,7 @@ html {
   border-radius: 7px;
 }
 
-#content article .type a {
+.type a {
   display: block;
   margin: 10px 0 0 0;
   padding: 0;
@@ -100,6 +100,15 @@ html {
   left: 0;
   background-color: #000000;
   text-decoration: none;
+}
+
+#legend {
+  margin-bottom: 35px;
+}
+
+#legend .type a {
+  display: inline-block;
+  margin: 0 5px 0 15px;
 }
 
 #content hr {

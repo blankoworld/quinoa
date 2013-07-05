@@ -1,8 +1,5 @@
 /* Place your CSS after this comment */
-#content article.normal {
-  border-color: transparent;
-}
 
-#content article .type.logique a {
+.type.logique a {
   background-color: #2D71B5;
 }
