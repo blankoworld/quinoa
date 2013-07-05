@@ -79,7 +79,27 @@ html {
 }
 
 #content {
+  background-color: transparent;
+}
+
+#content article {
+  border: 1px solid transparent;
+  margin-bottom: 15px;
+  padding: -1px;
   background-color: #eee;
+  border-radius: 7px;
+}
+
+#content article .type a {
+  display: block;
+  margin: 10px 0 0 0;
+  padding: 0;
+  height: 10px;
+  width: 10px;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  text-decoration: none;
 }
 
 #content hr {
@@ -239,6 +259,7 @@ aside#navigation {
   width: 28.7%;
   height: auto;
   background-color: #eee;
+  border-radius: 7px;
 }
 
 aside#navigation h2 {

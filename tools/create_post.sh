@@ -75,7 +75,7 @@ done
 while [ -z "$tags" ]; do
   read -p "Tags (use comma as separator): " tags
 done
-read -p "Type (normal, logical, info, etc.): " post_type
+read -p "Type (normal, logique, info, etc.): " post_type
 timestamp=`date +'%s'`
 
 # code retrived from Nanoblogger translit_text method with a little improvement for double "_"
