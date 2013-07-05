@@ -3,3 +3,11 @@
 .type.logique a {
   background-color: #2D71B5;
 }
+
+.type.info a {
+  background-color: #B52D80;
+}
+
+.type.perso a {
+  background-color: #E68B0A;
+}
