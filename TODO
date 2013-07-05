@@ -1,7 +1,9 @@
 TODO:
 -----
 
-
+- Afficher le contenu des billets sous leurs infos dans la liste des citations. (ou bien n'afficher que les 2 à 3 premières lignes ?)
+- Traduire le texte inclus dans le fichier source suite à un 'pmake add' (Type your markdown text here)
+- Afficher une liste des citations par "type" (normal, logique, etc.) ?
 
 ABANDON:
 --------
