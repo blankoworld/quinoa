@@ -1,5 +1,5 @@
 HOME_TITLE = Accueil
-POST_LIST_TITLE = Citations
+POST_LIST_TITLE = Pensées
 TAG_LIST_TITLE = Mots-clés
 TAG_TITLE = Mot(s)-clé(s)
 PERMALINK_TITLE = lien permanent
