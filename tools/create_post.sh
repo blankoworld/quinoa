@@ -65,7 +65,7 @@ fi
 ###
 
 # Last number
-last=`ls ${SRCDIR}|sort -u|tail -n 1|cut -d '.' -f 1`
+last=`ls ${SRCDIR}|sort -n|tail -n 1|cut -d '.' -f 1`
 lastnumber=$(( ${last:-0} + 1 ))
 title=$lastnumber
 # Fetch data
