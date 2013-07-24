@@ -178,14 +178,14 @@ theme: ${TMPLDIR}
 .endif
 
 # Create post: simple post creation
-# note: create_post.sh -q 1 do not display any editor
+# note: create_post.sh -q do not display any editor
 # TODO: title="myTitle" tags="myTags" quiet="1" pmake add
 createpost: ${DBDIR} ${SRCDIR} ${TMPDIR}
 	$Q{ cat ${TOOLSDIR}/create_post.sh |${parser} \
 		"DBDIR=${DBDIR}" \
 		"SRCDIR=${SRCDIR}" > ${TMPDIR}/create_post.sh && \
 		chmod +x ${TMPDIR}/create_post.sh && \
-		${TMPDIR}/create_post.sh -q 0 && \
+		${TMPDIR}/create_post.sh && \
 		${rm} ${TMPDIR}/create_post.sh || \
 		{ \
 			${rm} -rf ${TMPDIR}/create_post.sh && \
