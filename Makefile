@@ -185,7 +185,7 @@ createpost: ${DBDIR} ${SRCDIR} ${TMPDIR}
 		"DBDIR=${DBDIR}" \
 		"SRCDIR=${SRCDIR}" > ${TMPDIR}/create_post.sh && \
 		chmod +x ${TMPDIR}/create_post.sh && \
-		${TMPDIR}/create_post.sh -q 0 && \
+		${TMPDIR}/create_post.sh && \
 		${rm} ${TMPDIR}/create_post.sh || \
 		{ \
 			${rm} -rf ${TMPDIR}/create_post.sh && \
