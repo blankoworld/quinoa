@@ -181,13 +181,7 @@ function createPost(file, config, template_file, template_tag_file)
       POST_ESCAPED_TITLE = title,
     }
     -- create substitutions list
-    local substitutions = {}
-    for k, v in pairs(replacements) do 
-      substitutions[k] = v
-    end
-    for k, v in pairs(post_replacements) do 
-      substitutions[k] = v
-    end
+    local substitutions = getSubstitutions(replacements, post_replacements)
     -- add comment block if comment system is activated
     if template_comment then
       local jskomment_prefix = config['JSKOMMENT_PREFIX'] and config['JSKOMMENT_PREFIX'] ~= '' and config['JSKOMMENT_PREFIX'] or replacements['BLOG_URL']
@@ -198,7 +192,7 @@ function createPost(file, config, template_file, template_tag_file)
     -- ${VARIABLES} substitution on markdown content
     local final_content = replace(post:flatten(), substitutions)
     -- write result to output file
-    out:write(final_content)
+    out:write(replace(final_content, substitutions))
     -- close output file
     assert(out:close())
     -- Print post title
@@ -265,6 +259,7 @@ function createPostIndex(posts, index_file, template_index_file, template_elemen
         SHORT_DATE = os.date(short_date_format, timestamp) or '',
         DATE = os.date(date_format, timestamp) or '',
         DATETIME = os.date(datetime_format_default, timestamp) or '',
+        ARTICLE_CLASS_TYPE = v['conf']['TYPE'],
       }
       -- registering tags
       local post_conf_tags = v['conf']['TAGS'] or nil
@@ -313,7 +308,6 @@ function createPostIndex(posts, index_file, template_index_file, template_elemen
         end
         local post_content = replace(template_article_index, {CONTENT=markdown(final_post_content)})
         -- complete missing info
-        post_substitutions['ARTICLE_CLASS_TYPE'] = v['conf']['TYPE']
         post_substitutions['POST_ESCAPED_TITLE'] = title
         -- add comment block if comment system is activated
         if template_comment then
