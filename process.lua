@@ -259,6 +259,7 @@ function createPostIndex(posts, index_file, template_index_file, template_elemen
         SHORT_DATE = os.date(short_date_format, timestamp) or '',
         DATE = os.date(date_format, timestamp) or '',
         DATETIME = os.date(datetime_format_default, timestamp) or '',
+        ARTICLE_CLASS_TYPE = v['conf']['TYPE'],
       }
       -- registering tags
       local post_conf_tags = v['conf']['TAGS'] or nil
@@ -307,7 +308,6 @@ function createPostIndex(posts, index_file, template_index_file, template_elemen
         end
         local post_content = replace(template_article_index, {CONTENT=markdown(final_post_content)})
         -- complete missing info
-        post_substitutions['ARTICLE_CLASS_TYPE'] = v['conf']['TYPE']
         post_substitutions['POST_ESCAPED_TITLE'] = title
         -- add comment block if comment system is activated
         if template_comment then
