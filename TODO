@@ -1,9 +1,10 @@
 TODO:
 -----
 
-- Afficher le contenu des billets sous leurs infos dans la liste des citations. (ou bien n'afficher que les 2 à 3 premières lignes ?)
+- Afficher le contenu des billets sous leurs infos dans la liste des citations. (ou bien n'afficher que les 2 à 3 premières lignes ?) string.sub('chaine de caractère', 0, 30) => 30 premiers caractères d'une chaîne
 - Traduire le texte inclus dans le fichier source suite à un 'pmake add' (Type your markdown text here)
 - Afficher une liste des citations par "type" (normal, logique, etc.) ?
+- Créer une commande qui sort l'ensemble des "quotes" sous la forme d'un fichier de fortunes
 
 ABANDON:
 --------
