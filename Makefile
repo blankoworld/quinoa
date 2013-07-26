@@ -33,7 +33,7 @@ conf ?= quinoa.rc
 # use mainscript= to change script file
 mainscript ?= process.lua
 # Quinoa version
-VERSION = 0.0-trunk
+VERSION = 0.0
 
 # directories
 TMPLDIR          = ./template
