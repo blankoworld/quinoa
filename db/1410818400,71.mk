@@ -1,5 +1,5 @@
-TITLE = 52
+TITLE = 71
 DESCRIPTION = ''
-TAGS = glauque, moral, vie privée
+TAGS = glauque,moral,délire,social
 TYPE = perso
 AUTHOR = olivier
