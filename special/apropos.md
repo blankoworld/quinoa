@@ -1,8 +1,7 @@
 ### Présentation
 
-Quinoa est un système statique de publication de *citations*.
+Je suis Olivier, une personne traversant beaucoup de zones de turbulences sociales, psychologiques, égoïstes ; au final humaines.
 
-Cela fonctionne à la manière d'un microblog dans le sens où le rédacteur publie de petites phrases ou bien de grands textes aléatoirement, sans titre particulier.
+Cet endroit permet à la fois de partager et de se débarasser des différentes pensées qui traversent mon esprit.
 
-C'est ce qui permet à mon esprit de coucher sur papier numérique les pensées sombres/noires/grises/multicolorées qui traversent mon esprit par moment.
-
+Amusez-vous à décortiquer ce flux et vous y trouverez des choses intéressantes ;)
