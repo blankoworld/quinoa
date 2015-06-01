@@ -201,7 +201,7 @@ version:
 
 # list: list all available command as a help command
 list: 
-	$Qecho "List of available commands: \n \
+	$Qecho -e "List of available commands: \n \
 		list       list all available commands \n \
 		help       same as 'list' command \n \
 		clean      clean up current directory from generated files \n \
