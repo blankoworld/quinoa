@@ -1,0 +1,14 @@
+BLOG_TITLE = Tergiverser
+BLOG_SHORT_DESC = mes pensées
+BLOG_DESCRIPTION = Sollicitudes de pensées à mon esprit
+BLOG_LANG = fr
+BLOG_CHARSET = UTF-8
+BLOG_URL = https://olivier.dossmann.net/pensees
+INSTALLDIR = www
+RSS_FEED_NAME = Flux de pensées
+MAX_POST = 15
+DATE_FORMAT = %d-%m-%Y
+SHORT_DATE_FORMAT = %Y/%m/%d
+MAX_RSS = 10
+ABOUT_FILENAME = apropos
+SIDEBAR = 1
